@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {%load static %}
+    <link rel="stylesheet" href="{% static 'css/style_db.css' %}" />
+    <title>SIGESTAL | DASHBOARD</title>
+  </head>
+  <body>
+    Bienvenido, {{user.username | upper}}
+    <form action="" method="post">
+      {{form}}
+    </form>
+    <nav class="sideBar">
+    <div class="container">
+      <div class="logo">
+      </div>
+      <ul class="link-items">
+        <li class="link-item active">
+          <a href="#" class="link">
+            <ion-icon name="home-outline"></ion-icon>
+            <span style="--i: 1">inicio</span>
+          </a>
+        </li>
+        <li class="link-item">
+          <a href="#" class="link">
+            <ion-icon name="cube-outline"></ion-icon>
+            <span style="--i: 2">dashboard</span>
+          </a>
+        </li>
+        <li class="link-item">
+          <a href="#" class="link"
+            ><ion-icon name="search-outline"></ion-icon>
+            <span style="--i: 3">buscar</span>
+          </a>
+        </li>
+        <li class="link-item">
+          <a href="#" class="link">
+            <ion-icon class="noti-icon" name="notifications-outline"></ion-icon>
+            <span style="--i: 4">notificaciones</span>
+            <span class="num-noti">4</span>
+          </a>
+        </li>
+        <li class="link-item">
+          <a href="#" class="link">
+            <ion-icon name="bookmark-outline"></ion-icon
+            ><span style="--i: 5">marcadores</span>
+          </a>
+        </li>
+        <li class="link-item">
+          <a href="#" class="link">
+            <ion-icon name="cog-outline"></ion-icon>
+            <span style="--i: 6">configuracion</span>
+          </a>
+        </li>
+        <li class="link-item">
+          <a href="#" class="link">
+            <ion-icon name="help-circle-outline"></ion-icon>
+            <span style="--i: 7">ayuda</span>
+          </a>
+        </li>
+        <li class="link-item dark-mode">
+          <a href="#" class="link">
+            <ion-icon name="moon-outline"></ion-icon>
+            <span style="--i: 8">modo oscuro</span>
+          </a>
+        </li>
+        <li class="link-item">
+          <a href="{% url 'logout' %}" class="link">
+            <ion-icon name="log-out-outline"></ion-icon>
+            <span style="--i: 9">Cerrar Sesion</span>
+          </a>
+        </li>
+        <li class="link-item">
+          <a href="#" class="link">
+            <img src="{% static 'img/user.jpg' %}" alt="" />
+            <span style="--i: 10">
+              <h4>Cesar Fernandez</h4>
+              <p>Administrador</p>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="{% static 'js/script_db.js' %}"></script>
+  </body>
+</html>

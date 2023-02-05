@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+
+	{%load static %}
+
+	<!-- Titulo de la web
+   ================================================== -->
+	<title>SIGESTAL - SISTEMA GESTOR DE TALLER</title>
+
+	<!-- Bootstrap CSS
+   ================================================== -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+	<!-- Animacion CSS
+   ================================================== -->
+	<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+
+	<!-- Fuente Iconos CSS
+   ================================================== -->
+	<link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/et-line-font.css' %}">
+
+	<!-- Nivo Lightbox CSS
+   ================================================== -->
+	<link rel="stylesheet" href="{% static 'css/nivo-lightbox.css' %}">
+	<link rel="stylesheet" href="{% static 'css/nivo_themes/default/default.css' %}">
+
+	<!-- Owl Carousel CSS
+   ================================================== -->
+   	<link rel="stylesheet" href="{% static 'css/owl.theme.css' %}">
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}">
+
+	<!-- Main CSS
+   ================================================== -->
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+	<!-- Google web font 
+   ================================================== -->	
+   <link href='https://fonts.googleapis.com/css?family=Oxygen:400,700' rel='stylesheet' type='text/css'>
+	
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+
+
+<!-- Preloader section
+================================================== -->
+<div  class="preloader">
+
+	<div class="sk-spinner sk-spinner-pulse"></div>
+
+</div>
+
+
+<!-- Home section
+================================================== -->
+<section id="home" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-offset-2 col-md-8 col-sm-12">
+				<h2 class="wow bounceIn">SIGESTAL WEB</h2>
+				<h4 class="font-weight-normal font-color-gray wow fadeInUp" data-wow-delay="1s">Ofrecemos una solución integral para empresas o particulares que brinden servicios de mantenimiento y reparación de una amplia variedad de rubros.</h4>
+				<a href="#service" class="btn btn-default section-btn smoothScroll wow fadeInUp" data-wow-delay="1.9s">MAS INFORMACION</a>
+				<a href="#contact" class="btn btn-warning section-btn smoothScroll hidden-xs wow fadeInUp" data-wow-delay="1.9s">CONTACTENOS</a>
+			</div>
+			<div class="backstretch" style="left: 0px; top: 0px; overflow: hidden; margin: 0px; padding: 0px; height: 345px; width: 1263px; z-index: -999998; position: absolute;">
+				<img style="position: absolute; display: none; margin: 0px; padding: 0px; border: medium none; width: auto; height: 345px; max-height: none; max-width: none; z-index: -999999; top: 0px;" src="{%static 'images/home-bg-slider-img1.jpg' %}">
+			</div>
+
+		</div>
+	</div>		
+</section>
+
+
+<!-- Navigation section
+================================================== -->
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+	<div class="container">
+
+		<div class="navbar-header">
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+				<span class="icon icon-bar"></span>
+			</button>
+			<a href="#" class="navbar-brand">SIGESTAL.</a>
+		</div>
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#home" class="smoothScroll">INICIO</a></li>
+				<li><a href="#service" class="smoothScroll">SERVICIOS</a></li>
+				<li><a href="#about" class="smoothScroll">ACERCA</a></li>
+				<li><a href="#team" class="smoothScroll">GRUPO</a></li>
+				<li><a href="#portfolio" class="smoothScroll">PERFIL</a></li>
+				<li><a href="#blog" class="smoothScroll">BLOG</a></li>
+				<li><a href="#contact" class="smoothScroll">CONTACTO</a></li>
+				<li><a href="accounts/login/" class="smoothScroll">INGRESO</a></li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+
+
+<!-- Service section
+================================================== -->
+<section id="service" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-8 col-sm-10">
+				<div class="section-title">
+					<h1>Software</h1>
+					<p>Brindamos una potente solución que te permite escalabilidad.</p>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+				<div class="media">
+					<div class="media-object pull-left">
+						<i class="icon icon-laptop"></i>
+					</div>
+					<div class="media-body">
+						<h3 class="media-heading">Gestion de Taller</h3>
+						<p>Organiza y agiliza los procesos de trabajo, manteniendo un control total en tu taller.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="1.3s">
+				<div class="media">
+					<div class="media-object pull-left">
+						<i class="icon  icon-tools-2"></i>
+					</div>
+					<div class="media-body">
+						<h3 class="media-heading">Servicios</h3>
+						<p>Categoriza y genera una completa lista de precios de la mano de obra.</p>
+					</div>
+				</div>	
+			</div>
+			<div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="1.6s">
+				<div class="media">
+					<div class="media-object pull-left">
+						<i class="icon  icon-clipboard"></i>
+					</div>
+					<div class="media-body">
+						<h3 class="media-heading">Productos</h3>
+						<p>Categoriza y gestiona tus productos/repuestos generando una completa lista de precios.</p>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="1.9s">
+				<div class="media">
+					<div class="media-object pull-left">
+						<i class="icon  icon-profile-male"></i>
+					</div>
+					<div class="media-body">
+						<h3 class="media-heading">Clientes</h3>
+						<p>Lleva una completa agenda de tus clientes, gestiona sus datos personales y mas.</p>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- about section
+================================================== -->
+<section id="about" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-6 col-sm-10 wow fadeInUp" data-wow-delay="1.3s">
+				<h1>Sigestal Studio</h1>
+				<p>Sigestal es un Software de Gestión de Taller diseñado por la empresa Serviferpe, con la finalidad de mejorar la calidad del serivicio, la organización y atención en diversas áreas de especialización que conlleva un taller de raparaciones y mantenimiento de equipos informáticos.</p>
+				<p>Su eficiencia y versatilidad hacen de este un Software ideal para los emprendedores que quieren alcanzar un nuevo nivel en la calidad de sus servicios.</p>
+			</div>
+			<div class="col-md-6 col-sm-10 wow fadeInUp" data-wow-delay="1.6s">
+				<div class="embed-responsive embed-responsive-16by9">
+					<img src="{% static 'images/software1.png' %}" class="embed-responsive-item" alt="about">
+					<!--<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/2ZKV6B03I0s" frameborder="0" allowfullscreen></iframe>-->
+				</div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- team section
+================================================== -->
+<section id="team" class="paralla-section">
+	<div class="container">
+		<div class="row">
+
+			<!-- Section title
+			================================================== -->
+			<div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 wow bounceIn">
+				<div class="section-title">
+					<h1>Grupo de trabajo</h1>
+					<p>Ninguno de nosotros es tan bueno como todos nosotros juntos. -Ray Kroc-</p>
+				</div>
+			</div>
+
+            <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+            	<div class="team-wrapper">
+            		<img src="{% static 'images/team_1.jpg' %}" class="img-responsive" alt="about">
+            			<div class="team-wrapper-social">
+            				<ul class="social-icon">
+								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.9s"></a></li>
+							</ul>
+            			</div>
+            	</div>
+            	<div class="team-description">
+            		<h3>Alexandra Pincay</h3>
+            		<h5>Data Scientist</h5>
+            	</div>
+            </div>
+            <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.3s">
+            	<div class="team-wrapper">
+            		<img src="{% static 'images/team_2.jpg' %}" class="img-responsive" alt="about">
+            			<div class="team-wrapper-social">
+            				<ul class="social-icon">
+								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.9s"></a></li>
+							</ul>
+            			</div>
+            	</div>
+            	<div class="team-description">
+            		<h3>Sebastian Fernandez</h3>
+            		<h5>Machine learning engineer</h5>
+            	</div>
+            </div>
+            <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="1.6s">
+            	<div class="team-wrapper">
+            		<img src="{% static 'images/team_3.jpg' %}" class="img-responsive" alt="about">
+            			<div class="team-wrapper-social">
+            				<ul class="social-icon">
+								<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+								<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.9s"></a></li>
+							</ul>
+            			</div>
+            	</div>
+            	<div class="team-description">
+            		<h3>Paullete Fernandez</h3>
+            		<h5> Software architect</h5>
+            	</div>
+            </div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- portfolio section
+================================================== -->
+<section id="portfolio" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<!-- Section title
+			================================================== -->
+			<div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 wow bounceIn text-center">
+				<div class="section-title">
+					<h1>Trabajos recientes</h1>
+					<p>El beneficio de la calidad recae sobre quien la construye.</p>
+				</div>
+			</div>
+
+			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+				<div class="portfolio-thumb">
+               		<a href="{% static 'images/portfolio-img1.jpg' %}" data-lightbox-gallery="portfolio-gallery">
+               			<img src="{% static 'images/portfolio-img1.jpg' %}" class="fluid-img" alt="portfolio img">
+               				<div class="portfolio-overlay">
+               					<div class="portfolio-overlay-des">
+               						<i class="fa fa-link"></i>
+               				 		<h3>Tarjetas Gráficas</h3>
+               				 		<h5>Reparación / Mantenimiento / Gestión</h5>
+               					</div>
+               				</div>
+               		</a>
+               	</div>
+			</div>
+			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+				<div class="portfolio-thumb">
+               		<a href="{% static 'images/portfolio-img2.jpg' %}" data-lightbox-gallery="portfolio-gallery">
+               			<img src="{% static 'images/portfolio-img2.jpg' %}" class="fluid-img" alt="portfolio img">
+               				<div class="portfolio-overlay">
+               				 	<div class="portfolio-overlay-des">
+               						<i class="fa fa-link"></i>
+               				 		<h3>Celulares</h3>
+               				 		<h5>Reparación / Mantenimiento / Gestión</h5>
+               					</div>
+               				</div>
+               		</a>
+               	</div>
+			</div>
+			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+				<div class="portfolio-thumb">
+               		<a href="{% static 'images/portfolio-img3.jpg' %}" data-lightbox-gallery="portfolio-gallery">
+               			<img src="{% static 'images/portfolio-img3.jpg' %}" class="fluid-img" alt="portfolio img">
+               				<div class="portfolio-overlay">
+               				 	<div class="portfolio-overlay-des">
+               						<i class="fa fa-link"></i>
+               				 		<h3>Macro-Proyectos</h3>
+               				 		<h5>Reparación / Mantenimiento / Gestión</h5>
+               					</div>
+               				</div>
+               		</a>
+               	</div>
+			</div>
+			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+				<div class="portfolio-thumb">
+               		<a href="{% static 'images/portfolio-img4.jpg' %}" data-lightbox-gallery="portfolio-gallery">
+               			<img src="{% static 'images/portfolio-img4.jpg' %}" class="fluid-img" alt="portfolio img">
+               				<div class="portfolio-overlay">
+               				 	<div class="portfolio-overlay-des">
+               						<i class="fa fa-link"></i>
+               				 		<h3>Teconolía Agropecuaria</h3>
+               				 		<h5>Reparación / Mantenimiento / Gestión</h5>
+               					</div>
+               				</div>
+               		</a>
+               	</div>
+			</div>
+			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+				<div class="portfolio-thumb">
+               		<a href="{% static 'images/portfolio-img5.jpg' %}" data-lightbox-gallery="portfolio-gallery">
+               			<img src="{% static 'images/portfolio-img5.jpg' %}" class="fluid-img" alt="portfolio img">
+               				<div class="portfolio-overlay">
+               				 	<div class="portfolio-overlay-des">
+               						<i class="fa fa-link"></i>
+               				 		<h3>Arquitectura de Esquemas</h3>
+               				 		<h5>Reparación / Mantenimiento / Gestión</h5>
+               					</div>
+               				</div>
+               		</a>
+               	</div>
+			</div>
+			<div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+				<div class="portfolio-thumb">
+               		<a href="{% static 'images/portfolio-img6.jpg' %}" data-lightbox-gallery="portfolio-gallery">
+               			<img src="{% static 'images/portfolio-img6.jpg' %}" class="fluid-img" alt="portfolio img">
+               				<div class="portfolio-overlay">
+               				 	<div class="portfolio-overlay-des">
+               						<i class="fa fa-link"></i>
+               				 		<h3>Gestión de Taller</h3>
+               				 		<h5>Reparación / Mantenimiento / Gestión</h5>
+               					</div>
+               				</div>
+               		</a>
+               	</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+
+<!-- blog section
+================================================== -->
+<section id="blog" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<!-- Section title
+			================================================== -->
+			<div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 wow bounceIn text-center">
+				<div class="section-title">
+					<h1>Nuestro Blog</h1>
+					<p>Te recomendamos visitar nuestros servicios asociados.</p>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="0.9s">
+				<div class="blog-wrapper">
+					<span class="blog-date">Online Business / Dic 9, 2016</span>
+					<h3 class="blog-title"><a href="blog-single.html">The best way to make Online Business</a></h3>
+					<h5 id="blog-author">por Alexandra Pincay</h5>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-12 wow fadeInUp" data-wow-delay="1.3s">
+				<div class="blog-wrapper" id="b">
+					<span class="blog-date">Frontend Dev / Dic 9, 2016</span>
+					<h3 class="blog-title"><a href="blog-single.html">Frontend Developer Vs UI Designer</a></h3>
+					<h5 id="blog-author">por Sebastian Fernandez</h5>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="1.6s">
+				<div class="blog-wrapper" id="c">
+					<span class="blog-date">Social Marketing / Dic 9, 2016</span>
+					<h3 class="blog-title"><a href="blog-single.html">What is Social Marketing Business</a></h3>
+					<h5 id="blog-author">por Paullete Fernandez</h5>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="1.9s">
+				<div class="blog-wrapper" id="d">
+					<span class="blog-date">Web Design / Dic 9, 2016</span>
+					<h3 class="blog-title"><a href="blog-single.html">How to become Web Designer</a></h3>
+					<h5 id="blog-author">por David Jenn</h5>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+
+<!-- Faq section
+================================================== -->
+<section id="faq" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<!-- Section title
+			================================================== -->
+			<div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 wow bounceIn text-center">
+				<div class="section-title">
+					<h1>Preguntas Frecuentes</h1>
+					<p>Todas las dudas siempre van ah ser resueltas en el menor tiempo posible.</p>
+				</div>
+			</div>
+
+			<div class="col-md-offset-1 col-md-10 col-sm-12 wow fadeInUp" data-wow-delay="0.9s">
+				<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+  					<div class="panel panel-default">
+   						<div class="panel-heading" role="tab" id="headingOne">
+      						<h4 class="panel-title">
+        						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          							<i class="icon icon-laptop"></i> Cómo utilizar el Gestor?
+        						</a>
+      						</h4>
+    					</div>
+   						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      						<div class="panel-body">
+        						<p>Mediante la plataforma, el Gestor tiene la funcionalidad de resumir todas las actividades llevadas a cabo por el centro de Reparacion de equipos informáticos, incluyento la Logística, Talento Humano y el area Financiera.</p>
+								<p>También permite asignar nuevas actividades si así lo requiere el usuario, mediante los menús interactivos.</p>
+      						</div>
+   						 </div>
+ 					 </div>
+
+    				<div class="panel panel-default">
+   						<div class="panel-heading" role="tab" id="headingTwo">
+      						<h4 class="panel-title">
+        						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          							<i class="icon  icon-tools-2"></i> Que es el Sistema de Servicios?
+        						</a>
+      						</h4>
+    					</div>
+   						<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      						<div class="panel-body">
+        						<p>Es una sección de la plataforma que permite gestinar las actividades llevadas a cabo por el taller, ademas de incluir un resumen mensual de las tareas cumplicas, asignadas o gestionadas por diversas areas o tecnicos.</p>
+								<p>Incluye detalles de costos, mano de obra, repuestos y servicios registrados por la empresa beneficiaria.</p>
+      						</div>
+   						 </div>
+ 					 </div>
+
+ 					 <div class="panel panel-default">
+   						<div class="panel-heading" role="tab" id="headingThree">
+      						<h4 class="panel-title">
+        						<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+          							<i class="icon  icon-clipboard"></i> Por que es importante el Gestor de Productos?
+        						</a>
+      						</h4>
+    					</div>
+   						<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      						<div class="panel-body">
+        						<p>Mediante este sismtema se automatiza y gestiona los productos que se venden, almancenan o distribuyen dentro y fuera del taller.</p>
+								<p>Tambien gestiona fechas de vencimiento de productos perecibles como insumos de taller.</p>
+      						</div>
+   						 </div>
+ 					 </div>
+
+ 				 </div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- testimonial section
+================================================== -->
+<section id="testimonial" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<!-- Section title
+			================================================== -->
+			<div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 wow bounceIn text-center">
+				<div class="section-title">
+					<h1>¿Que dicen nuestros clientes?</h1>
+					<p>Presentamos los testimonios de algunos de nuestros clientes que se beneficiaron de nuestro servicio.</p>
+				</div>
+			</div>
+
+			<!-- Work Owl Carousel section
+			================================================== -->
+			<div id="owl-testimonial" class="owl-carousel">
+
+				<div class="item col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+					<div class="media">
+						<div class="media-object pull-left">
+							<img src="{% static 'images/testimonial-img1.jpg' %}" class="img-responsive" alt="testimonial">
+						</div>
+						<div class="media-body">
+							<p>Gracias a este sistema eh podido gestionar de mejor manera mis proyectos de reparacion, las ventas de mi negocio y los diferentes puntos de venta con los que cuenta mi local, mejorando la productividad y disminuyendo los costos de operacion.</p>
+							<h4 class="media-heading">Javier Pincay</h4>
+						</div>
+					</div>
+				</div>
+				<div class="item col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+					<div class="media">
+						<div class="media-object pull-left">
+							<img src="{% static 'images/testimonial-img2.jpg' %}" class="img-responsive" alt="testimonial">
+						</div>
+						<div class="media-body">
+							<p>Es genial! La facilidad con la que gestiono a mis clientes, y la rapidez de respuesta de mis clientes ah permitido aumentar la confianza con los mismo, dandome la oportunidad de hacer de la reparicion un proceso inclusivo. Gestiono de mejor manera los tiempos de entrega de cada equipo y me he permitido asignar los trabajos a tecnos mas especializados y capacitados para areas especificas</p>
+							<h4 class="media-heading">Seirina Fernandez</h4>
+						</div>
+					</div>
+				</div>
+				<div class="item col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+					<div class="media">
+						<div class="media-object pull-left">
+							<img src="{% static 'images/testimonial-img3.jpg' %}" class="img-responsive" alt="testimonial">
+						</div>
+						<div class="media-body">
+							<p>La calidad de los servicios mejora cuando se utilizan las herramientas correctas.</p>
+							<h4 class="media-heading">Gustavo Barrera</h4>
+						</div>
+					</div>
+				</div>
+				<div class="item col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+					<div class="media">
+						<div class="media-object pull-left">
+							<img src="{% static 'images/testimonial-img4.jpg' %}" class="img-responsive" alt="testimonial">
+						</div>
+						<div class="media-body">
+							<p>La mejor inversion es tener puesto nuestros esfuerzos en profesionales capacitados que permitan crecer a los emprendedores como nosotros.</p>
+							<h4 class="media-heading">Carlos Mendoza</h4>
+						</div>
+					</div>
+				</div>
+				<div class="item col-md-6 col-sm-6 wow fadeInUp" data-wow-delay="0.9s">
+					<div class="media">
+						<div class="media-object pull-left">
+							<img src="{%static 'images/testimonial-img5.jpg' %}" class="img-responsive" alt="testimonial">
+						</div>
+						<div class="media-body">
+							<p>La interfaz es super amigable, los colores, las diversas funcionalidades permiten facilmente entender el funcionamiento de la plataforma, adaptarse a ella eh incluso modificar funciones que permitan maximizar la eficiencia del trabajo. Me encanta!</p>
+							<h4 class="media-heading">Lemny Valencia</h4>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- Contact section
+================================================== -->
+<section id="contact" class="parallax-section">
+	<div class="container">
+		<div class="row">
+
+			<!-- Section title
+			================================================== -->
+			<div class="col-md-offset-2 col-md-8 col-sm-12">
+				<div class="section-title">
+					<h1>Ponerse en Contacto</h1>
+					<p>Comentanos tus dudas, será un placer atenderte.</p>
+				</div>
+			</div>
+
+			<!-- Contact form section
+			================================================== -->
+			<div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 wow fadeIn" data-wow-delay="0.6s">
+				<form action="contact.php" method="post">
+					<div class="col-md-6 col-sm-6">
+						<input type="text" class="form-control" placeholder="Nombre" name="name" required>
+						<input type="email" class="form-control" placeholder="Correo" name="email" required>
+						<input type="telephone" class="form-control" placeholder="Celular" name="phone" required>
+					</div>
+					<div class="col-md-6 col-sm-6">
+						<textarea class="form-control" placeholder="Mensaje" rows="7" name"message" required></textarea>
+					</div>
+					<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8">
+						<input type="submit" class="form-control" value="ENVIAR MENSAJE">
+					</div>
+				</form>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+
+<!-- Footer section
+================================================== -->
+<footer>
+	<div class="container">
+		<div class="row">
+
+			<div class="col-md-12 col-sm-12 wow fadeInUp" data-wow-delay="1s">
+				<p>Copyright © Serviferpe | Todos los Derchos Reservados.</p>
+				<ul class="social-icon">
+					<li><a href="#" class="fa fa-facebook wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-twitter wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-dribbble wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-behance wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-github wow fadeIn" data-wow-delay="0.9s"></a></li>
+					<li><a href="#" class="fa fa-google-plus wow fadeIn" data-wow-delay="0.9s"></a></li>
+				</ul>
+			</div>
+			
+		</div>
+	</div>
+</footer>
+
+
+<!-- Javascript 
+================================================== -->
+<script src="{% static 'js/jquery.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}"></script>
+<script src="{% static 'js/jquery.sticky.js' %}"></script>
+<script src="{% static 'js/jquery.backstretch.min.js' %}"></script>
+<script src="{% static 'js/jquery.parallax.js' %}"></script>
+<script src="{% static 'js/nivo-lightbox.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/smoothscroll.js' %}"></script>
+<script src="{% static 'js/wow.min.js' %}"></script>
+<script src="{% static 'js/custom.js' %}"></script>
+
+
+</body>
+</html>
